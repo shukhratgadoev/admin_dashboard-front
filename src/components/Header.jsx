@@ -1,7 +1,17 @@
 import React from "react";
 
-const Header = () => {
-  return <div>Header</div>;
+const Header = ({ category, title }) => {
+  return (
+    <div className="mb-10">
+      <p className="text-grey-400">{category}</p>
+      <p
+        className="text-3xl font-extrabold 
+      traking-tight text-slate-900"
+      >
+        {title}
+      </p>
+    </div>
+  );
 };
 
 export default Header;
